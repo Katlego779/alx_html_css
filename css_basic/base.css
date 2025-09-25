@@ -1,1 +1,30 @@
-/* Base styles for ALX HTML & CSS project */
+/* Base styles fo/* Base styles for ALX HTML & CSS project */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+body {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    color: #222;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+r ALX HTML & CSS project */
