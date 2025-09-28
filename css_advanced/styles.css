@@ -128,3 +128,38 @@ section.blockquote-section p {
     color: #555;
     font-size: 0.95rem;
 }
+/* Videos List Section */
+section.videos-section {
+    display: flex;
+    flex-wrap: wrap; /* wrap videos on smaller screens */
+    gap: 20px;       /* space between video cards */
+    margin: 20px 0;
+}
+
+section.videos-section .video-card {
+    background-color: #ffffff; /* Figma background */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    width: calc(25% - 15px); /* 4 cards per row, adjust for gap */
+    display: flex;
+    flex-direction: column;
+}
+
+section.videos-section .video-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section.videos-section .video-card h3 {
+    margin: 10px;
+    font-size: 1rem;
+    color: #0044cc; /* adjust based on Figma */
+}
+
+section.videos-section .video-card p {
+    margin: 0 10px 10px 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
