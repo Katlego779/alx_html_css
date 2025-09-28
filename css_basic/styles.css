@@ -1,79 +1,107 @@
-/* styles.css */
+/* styles.css - project-specific styles */
 
-/* Reset default spacing for consistency */
+/* Reset and box-sizing */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Body styling */
+/* Body */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Page container if using main wrapper */
+main {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Header */
 header {
-    background-color: #0044cc;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    border-radius: 8px;
-    margin-bottom: 20px;
+  background-color: #0044cc;
+  color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 header h1 {
-    font-size: 2rem;
+  font-size: 1.8rem;
 }
 
-/* Navigation (if added later) */
-nav {
-    margin-top: 10px;
+/* Navigation (simple inline links) */
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 12px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* Main Content */
+/* Main content area */
 main {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
 }
 
-/* Articles or sections */
+/* Articles */
 article {
-    border-bottom: 1px solid #ccc;
-    padding: 15px 0;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e6e9ee;
 }
 
 article:last-child {
-    border-bottom: none;
+  border-bottom: none;
+  margin-bottom: 0;
 }
 
-article h2 {
-    color: #0044cc;
-    margin-bottom: 10px;
+/* Headings */
+h2 {
+  color: #0044cc;
+  margin-bottom: 8px;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 12px;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background: #0044cc;
-    color: white;
-    border-radius: 8px;
+  text-align: center;
+  margin-top: 18px;
+  padding: 12px;
+  color: #fff;
+  background: #0044cc;
+  border-radius: 6px;
+}
+
+/* Small responsive tweaks */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.4rem; }
+  nav ul li { display: block; margin: 6px 0; }
+  main { padding: 14px; }
 }
