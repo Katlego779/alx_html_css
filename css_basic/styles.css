@@ -131,3 +131,33 @@ aside {
     flex: 1;
     overflow-y: auto;
 }
+/* Header customization */
+header {
+    background-color: #003366;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Add a logo using a class */
+.logo {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+/* Article tweaks */
+article {
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+/* Change paragraph text color */
+p {
+    color: #222;
+}
+<header>
+    <ul>
+        <li class="logo">&#9733;</li> <!-- Unicode star as logo -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tweets.html">Tweets</a></li>
+    </ul>
+</header>
