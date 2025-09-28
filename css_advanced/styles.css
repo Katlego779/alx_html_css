@@ -163,3 +163,57 @@ section.videos-section .video-card p {
     font-size: 0.9rem;
     color: #555;
 }
+/* Membership Section */
+section.membership-section {
+    display: flex;
+    flex-wrap: wrap;        /* Wrap cards on smaller screens */
+    gap: 20px;              /* Space between membership cards */
+    justify-content: center; /* Center cards */
+    margin: 20px 0;
+}
+
+section.membership-section .membership-card {
+    background-color: #ffffff; /* Card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    text-align: center;
+    width: calc(25% - 15px); /* 4 cards per row, adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.membership-section .membership-card img {
+    width: 60px;  /* Adjust based on Figma */
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+section.membership-section .membership-card h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #0044cc; /* Adjust per Figma */
+}
+
+section.membership-section .membership-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+}
+
+section.membership-section button {
+    margin-top: 20px;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section.membership-section button:hover {
+    background-color: #003399;
+}
