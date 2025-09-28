@@ -40,3 +40,63 @@ body.works_on_smartphone nav ul li {
   display: block; /* navigation items stack vertically */
   margin: 6px 0;
 }
+/* Header styling */
+header {
+  background-color: #0044cc; /* Use the Figma header color */
+  color: #ffffff;
+  padding: 20px 40px; /* Adjust according to Figma spacing */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* spacing between nav items */
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Banner / First section styling */
+main section:first-of-type {
+  background-color: #e6f0ff; /* Figma background color for banner */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px; /* adjust according to Figma */
+  border-radius: 8px;
+}
+
+main section:first-of-type div:first-of-type h1 {
+  font-size: 2.5rem;
+  color: #0044cc;
+  margin-bottom: 10px;
+}
+
+main section:first-of-type div:first-of-type span {
+  display: block;
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #222222;
+}
+
+main section:first-of-type div:first-of-type button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #0044cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+main section:first-of-type div:first-of-type button:hover {
+  background-color: #003399; /* darker shade on hover */
+}
