@@ -1,0 +1,186 @@
+/* ====== RESET & VARIABLES ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #ff6565;
+  --text-color: #ffffff;
+  --max-width: 1000px;
+}
+
+/* ====== BODY ====== */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #000;
+  color: var(--text-color);
+}
+
+/* ====== HERO ====== */
+.hero {
+  background: url('images/headphones_hero_1.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav-links a:hover,
+.nav-links a:active {
+  color: var(--primary-color);
+}
+
+/* ====== HERO CONTENT ====== */
+.hero-content {
+  text-align: center;
+  margin: auto;
+  max-width: 600px;
+}
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  margin-bottom: 2rem;
+}
+button {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--text-color);
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+button:hover,
+button:active {
+  opacity: 0.9;
+}
+
+/* ====== WHAT WE DO ====== */
+.what-we-do {
+  max-width: var(--max-width);
+  margin: 3rem auto;
+}
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.service {
+  flex: 1;
+  text-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.service i {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+.service h3 {
+  margin: 0.5rem 0;
+}
+.service p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.service:hover {
+  transform: scale(1.1) rotate(3deg);
+  opacity: 0.9;
+}
+
+/* ====== OUR RESULTS ====== */
+.results {
+  max-width: var(--max-width);
+  margin: 3rem auto;
+}
+.result-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.result-item {
+  width: 100px;
+  height: 100px;
+  background: var(--primary-color);
+  clip-path: polygon(50% 0%, 95% 35%, 77% 90%, 23% 90%, 5% 35%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.result-item:hover {
+  transform: scale(1.05) rotate(5deg);
+  opacity: 0.8;
+}
+
+/* ====== CONTACT ====== */
+.contact {
+  max-width: var(--max-width);
+  margin: 3rem auto;
+  text-align: center;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+.contact button {
+  width: 150px;
+  margin: auto;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+  .services,
+  .result-items {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+}
